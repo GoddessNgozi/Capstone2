@@ -89,9 +89,27 @@ main {
 
 .show-name {
     color: white;
-    width: 13rem;
     font-size: large;
     margin-top: 10px;
+}
+
+.show-card {
+    width: 13rem;
+}
+
+.comment-btn {
+    color: black;
+    border: none;
+    border-radius: 9999px;
+    background-color: rgb(201, 250, 68);
+    padding: 0.7rem 0.5rem 0.7rem 0.5rem;
+    font-size: 1.125rem;
+}
+
+.comments {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
 }
 
 @media (min-width: 768px) {

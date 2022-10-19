@@ -6,16 +6,18 @@ const cards = (shows) => {
     shows.forEach((show) => {
       const rater = show.rating.average ? '⭐' + show.rating.average : 'NR';
       const innerHtml = `
-      <li>
+      <li class="show-card">
       <span class="status">${show.status}</span>
       <div class="card" id="card" style="background-image: url(${show.image.original})">
         <div>
           <span class="rating">${rater}</span>
-          <span class="comment"></span>
-          <span class="class"></span>
+          <span class="likes"></span>
         </div>
       </div>
       <p class="show-name">${show.name}</p>
+      <div class="comments">
+      <button class="comment-btn" type="button">Comments</button>
+      </div>
       </li>`;
       cards.innerHTML += innerHtml;
     });
