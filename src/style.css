@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    list-style: none;
+}
+
+body {
+    background-image: url('./images/cinema5.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
+header {
+    background-color: rgba(215, 243, 31, 0);
+    /* backdrop-filter: saturate(180%) blur(10px); */
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 20;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+}
+
+#searchInput {
+    height: 3rem;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    color: white;
+    outline: none;
+}
+
+#searchIcon {
+    font-size: 2.025rem;
+    background-color: rgba(214,243,31,.9);
+    padding: 2px;
+    border-radius: 2rem;
+}
+
+.search-bar {
+    display: flex;
+    border: 1px solid rgba(214,243,31,.9);
+    padding: 5px;
+    border-radius: 1rem;
+    width: 30rem;
+    background-color: rgba(215, 243, 31, 0.287);
+}
+
+.logo {
+    font-size: 2.51rem;
+    color: rgba(214,243,31,.9);;
+}
+
+.card {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 18rem;
+    width: 13rem;
+    border-radius: 1.5rem;
+    border: 1px solid rgba(214,243,31,.9);
+}
+
+.show-cards {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 150px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    width: 60%;
+}
+
+.show-name {
+    color: white;
+    font-size: large;
+    margin-top: 10px;
+}
+
+.show-card {
+    width: 13rem;
+}
+
+.comment-btn {
+    color: black;
+    border: none;
+    border-radius: 9999px;
+    background-color: rgb(201, 250, 68);
+    padding: 0.7rem 0.5rem 0.7rem 0.5rem;
+    font-size: 1.125rem;
+}
+
+.comments {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background-color: rgba(215, 243, 31, 0);
+  width: 100%;
+  height: 2.5rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: rgba(215, 243, 31, 0);
+}
+
+footer p { 
+    font-size: 1.5rem;
+    color: rgba(214,243,31,.9);
+}
+
+footer p a {
+    color: rgba(214,243,31,.9);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    nav {
+        padding-left: 6%;
+        padding-right: 6%;
+        padding-top: 0.5%;
+    }
+}
