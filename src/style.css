@@ -4,13 +4,12 @@
     list-style: none;
 }
 
-.container {
+body {
     background-image: url('./images/cinema5.jpg');
     background-size: cover; 
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
 }
 
 header {
@@ -18,7 +17,9 @@ header {
     /* backdrop-filter: saturate(180%) blur(10px); */
     backdrop-filter: blur(10px);
     position: fixed;
+    top: 0;
     width: 100%;
+    z-index: 20;
 }
 
 nav {
@@ -27,11 +28,6 @@ nav {
     align-items: center;
     width: 100%;
 
-}
-
-main {
-    height: 100vw;
-    overflow: scroll;
 }
 
 #searchInput {
@@ -74,9 +70,9 @@ main {
 }
 
 .show-cards {
-    margin-top: 150px;
     display: flex;
     justify-content: flex-end;
+    margin-top: 150px;
 }
 
 .cards {
@@ -116,16 +112,14 @@ footer {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  margin: 10px;
   background-color: rgba(215, 243, 31, 0);
-  backdrop-filter: blur(5px);
-  position: fixed;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
   width: 100%;
   height: 2.5rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: rgba(215, 243, 31, 0);
 }
+
 footer p { 
     font-size: 1.5rem;
     color: rgba(214,243,31,.9);

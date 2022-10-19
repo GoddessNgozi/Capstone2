@@ -7,7 +7,6 @@ const cards = (shows) => {
       const rater = show.rating.average ? '⭐' + show.rating.average : 'NR';
       const innerHtml = `
       <li class="show-card">
-      <span class="status">${show.status}</span>
       <div class="card" id="card" style="background-image: url(${show.image.original})">
         <div>
           <span class="rating">${rater}</span>
