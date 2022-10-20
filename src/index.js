@@ -13,7 +13,7 @@ const cards = (shows, likeys) => {
         <div class="movie-data card" id="card" style="background-image: url(${show.image.original})">
           <span class="rating">${rater}</span>
           <button class="comment-btn" type="button">Comments</button>
-          <span class="likes">🖤${likeys[index].likes}</span>
+          <span class="likes">❤️${likeys[index].likes}</span>
       </div>
       <p class="show-name">${show.name}</p>
       </li>`;
@@ -21,8 +21,8 @@ const cards = (shows, likeys) => {
       const liks = document.querySelectorAll('.likes');
       liks.forEach((lik, index) => {
         lik.addEventListener('click', () => {
-          postLikes(index);
-          console.log(index);
+          postLikes(likeys[index].item_id);
+          lik.textContent = '❤️' + `${likeys[index].likes + 1}`;
         });
       });
     });
