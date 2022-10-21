@@ -6,8 +6,6 @@ export default class Movies {
     cards.innerHTML = '';
     shows.forEach((show, index) => {
       const rater = show.rating.average ? `⭐${show.rating.average}` : 'NR';
-      /* const likeNum = likeys.find((ele) => ele.item_id === index);
-        const liker = likeNum ? likeNum.likes + '❤️' : '🖤'; */
       const innerHtml = `
         <li class="show-card">
         <span class="status">${show.status}</span>
@@ -59,12 +57,4 @@ export default class Movies {
       });
     });
   }
-
-  /* const fetchLikes = () => {
-    fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/9SBCkZBSL5MdiOyZMhaU/likes')
-      .then((res) => res.json())
-      .then((data) => {
-        console.log(data);
-      });
-    } */
 }

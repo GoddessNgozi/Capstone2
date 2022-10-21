@@ -9,7 +9,7 @@ describe('Testing showsCounter function', () => {
         + '<liv class="show-card"></liv>'
         + '<liv class="show-card"></liv>';
     const count = document.querySelector('.count');
-    // Action
+    // Act
     showsCounter();
     // Assert
     expect(count.textContent).toBe('3');
@@ -19,7 +19,7 @@ describe('Testing showsCounter function', () => {
     // Arrange
     document.body.innerHTML = '<span class="count"></span>';
     const count = document.querySelector('.count');
-    // Action
+    // Act
     showsCounter();
     // Assert
     expect(count.textContent).toBe('0');
