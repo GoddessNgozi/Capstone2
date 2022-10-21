@@ -31,7 +31,6 @@ nav {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-
 }
 
 #searchInput {
@@ -94,6 +93,13 @@ nav {
     border: 1px solid rgba(214,243,31,.9);
 }
 
+.show-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-block-end: 30px;
+}
+
 .show-cards {
     display: flex;
     justify-content: flex-end;
@@ -105,16 +111,33 @@ nav {
     justify-content: center;
     flex-wrap: wrap;
     gap: 1.25rem;
-    width: 60%;
+    width: 63.75%;
+    padding-right: 3.75%;
 }
 
 .rating, .likes, .comment-btn {
     margin-bottom: 10px;
     color: black;
     border-radius: 9999px;
-    border: 1px solid rgba(214,243,31,.9);
-    background-color: rgba(215, 243, 31, 0.692);
+    border: 2px solid rgba(214,243,31,.9);
+    background-color: rgba(255, 255, 255, 0.696);
     padding: 0.25rem;
+}
+
+.status {
+    color: black;
+    border-radius: 9999px;
+    border: 4px solid rgba(1, 1, 0, 0.416);
+    background-color: rgb(226, 250, 89);
+    max-width: 10rem;
+    padding: 0.5rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    z-index: 5;
+    margin-bottom: -25px;
 }
 
 .comment-btn {
@@ -125,10 +148,7 @@ nav {
     color: white;
     font-size: large;
     text-align: center;
-}
-
-.show-card {
-    width: 13rem;
+    max-width: 13rem;
 }
 
 .likes {

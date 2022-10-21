@@ -10,6 +10,7 @@ const cards = (shows, likeys) => {
       const liker = likeNum ? likeNum.likes + '❤️' : '🖤'; */
       const innerHtml = `
       <li class="show-card">
+      <span class="status">${show.status}</span>
         <div class="movie-data card" id="card" style="background-image: url(${show.image.original})">
           <span class="rating">${rater}</span>
           <button class="comment-btn" type="button">Comments</button>
