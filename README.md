@@ -22,11 +22,15 @@ This app allows a user to search for movies by name and add it to their like lis
 - `npx stylelint "\*_/_.{css,scss}"`
 - `npx eslint .`
 
-### LIVE DEMO
+### Live Demo
 
 Click [Link](https://goddessngozi.github.io/Capstone2/dist)
 
-## Author
+### Live Video
+
+Click [Link](https://loom.com/share/5b70dd344aa34be2b0783e50ae364483)
+
+## Authors
 
 👤 **Goddess Ngozi**
 
